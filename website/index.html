@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Studieapps, Studiehjemmesider, Studieprogrammer, Studiehjælp, Noteringsapp, Planlægningsapp">
+    <meta name="description" content="Gratis studie apps, hjemmesider og programmer. Hjælp og optimering til studiet eller projektet.">
+    <meta name="author" content="Mathies Engblad">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="src/styles/headerstyles.css">
+    <link rel="stylesheet" href="src/styles/footerstyles.css">
+    <link rel="stylesheet" href="src/styles/frontpagestyles.css">
+
+    <!--Other links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+ 
+    <title>effectively.study</title>
+</head>
+
+
+
+
+<body>
+    <!--HEADER WITH SEARCHBAR-->
+    <header>
+        <a class="logolink" href="index.html"><img class="logo" src="src/images/logo.png" alt="logo" height="55.89px" width="168.75px"></a>
+            <nav class="navgroup">
+                <ul class="navlinks">
+                    <li><a href="#">categories</a></li>
+                    <li><a href="#">best tools</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+                
+            </nav>
+            <div class="search">
+                <span class="searchicon">
+                    <ion-icon name="search-outline" class="searchbutton"></ion-icon>
+                    <ion-icon name="close-outline" class="closebutton"></ion-icon>
+                </span>
+            </div>
+            <div class="searchbox">
+                <input type="text" placeholder="search">
+            </div>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let searchbutton = document.querySelector('.searchbutton');
+        let closebutton = document.querySelector('.closebutton');
+        let searchbox = document.querySelector('.searchbox');
+
+        searchbutton.onclick = function(){
+            searchbox.classList.add('active');
+            closebutton.classList.add('active');
+            searchbutton.classList.add('active');
+        }
+
+        closebutton.onclick = function(){
+            searchbox.classList.remove('active');
+            closebutton.classList.remove('active');
+            searchbutton.classList.remove('active');
+        }        
+    </script>
+    
+    
+    <!--FRONTPAGE-->
+
+
+
+    <!--Slider-->
+
+    <div class="slider">   
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+
+
+        <div class="slides">
+            <div class="slide slide-1">
+                <div class="slide-data">
+                    <h1>Studiz</h1>
+                    <p>Read about Studiz and how to use it</p>
+                    <button>Click here</button>
+                </div>
+            </div>
+            <div class="slide slide-2">
+                <div class="slide-data">
+                    <h1>Notion</h1>
+                    <p>Read about Notion and how to use it</p>
+                    <button>Click here</button>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-data">
+                    <h1>Grammarly</h1>
+                    <p>Read about Grammarly and how to use it</p>
+                    <button>Click here</button>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="arrows arrow-left">
+            <label for="slide-3">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-2">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+        </div>
+
+        <div class="arrows arrow-right">
+            <label for="slide-2">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-3">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+        </div>
+
+        <div class="dots">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+        </div>
+    </div>
+
+
+
+    <!--Cards underneath the slider-->
+    <div class="sitecontainer">
+        <div class="articlecontainer">
+            <article class="articlecard">
+                <figure class="articleimage">
+                    <img src="src/images/stockphone.jpg" alt="studyingwithphone"/>
+                </figure>
+                <div class ="articlecontent">
+                    <a href="#" class="cardname">Studiz</a>
+                    <h3 class="cardtitle">The student discount app you've always wanted</h3>
+                    <p class="cardpara">Studiz is a website and an app that tells you exactly where you can get student discounts</p>
+                </div>
+            </article>
+            <article class="articlecard">
+                <figure class="articleimage">
+                    <img src="src/images/notetaking.jpg" alt="notetaking"/>
+                </figure>
+                <div class ="articlecontent">
+                    <a href="#" class="cardname">Notion</a>
+                    <h3 class="cardtitle">The notetaking app that can do a lot more than advertised</h3>
+                    <p class="cardpara">Notion is a notetaking app that can not only behave like Windows OneNote, but it can be used fo project management as well</p>
+                </div>
+            </article>
+            <article class="articlecard">
+                <figure class="articleimage">
+                    <img src="src/images/schoolwork.jpg" alt="grammarcheck"/>
+                </figure>
+                <div class ="articlecontent">
+                    <a href="#" class="cardname">Grammarly</a>
+                    <h3 class="cardtitle">Having problems writing? Grammarly has your back</h3>
+                    <p class="cardpara">Grammarly is an app that can help you check for grammar, vocabulary and helps you sound more professional</p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-column">
+                    <h4>contact</h4>
+                    <ul>
+                        <li>+45 53 35 23 77</li>
+                        <li>mathiesengblad@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>address</h4>
+                    <ul>
+                        <li>Dr. Holsts Vej 40, 238, st.</li>
+                        <li>8230, Åbyhøj</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>follow us</h4>
+                    <div class="socials">
+                        <a href="#"><img class="instagram" src="src/images/instagramicon.png" alt="instagram" width="40px" height="40px"></a>
+                        <a href="#"><img class="facebook" src="src/images/facebookicon.png" alt="facebook" width="40px" height="40px"></a>
+                        <a href="#"><img class="twitter" src="src/images/twittericon.png" alt="twitter" width="40px" height="40px"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
