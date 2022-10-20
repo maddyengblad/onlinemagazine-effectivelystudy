@@ -18,6 +18,7 @@ header {
     justify-content:space-evenly;
     align-items: center;
     box-shadow: 0 15px 15px rgba(0,0,0,0.05);
+    z-index:1;
 }
 
 .logolink .logo {
