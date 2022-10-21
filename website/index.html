@@ -21,7 +21,7 @@
 
 
  
-    <title>effectively.study</title>
+    <title>effectively.study - frontpage</title>
 </head>
 
 
@@ -33,10 +33,10 @@
         <a class="logolink" href="index.html"><img class="logo" src="src/images/logo.png" alt="logo" height="55.89px" width="168.75px"></a>
             <nav class="navgroup">
                 <ul class="navlinks">
-                    <li><a href="#">categories</a></li>
+                    <li><a href="categories.html">categories</a></li>
                     <li><a href="#">best tools</a></li>
                     <li><a href="#">help</a></li>
-                    <li><a href="#">about us</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
                 </ul>
                 
             </nav>
@@ -78,102 +78,95 @@
 
     <!--Slider-->
 
-    <div class="slider">   
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
 
-
-        <div class="slides">
-            <div class="slide slide-1">
-                <div class="slide-data">
-                    <h1>Studiz</h1>
-                    <p>Read about Studiz and how to use it</p>
-                    <button>Click here</button>
-                </div>
-            </div>
-            <div class="slide slide-2">
-                <div class="slide-data">
-                    <h1>Notion</h1>
-                    <p>Read about Notion and how to use it</p>
-                    <button>Click here</button>
-                </div>
-            </div>
-            <div class="slide slide-3">
-                <div class="slide-data">
-                    <h1>Grammarly</h1>
-                    <p>Read about Grammarly and how to use it</p>
-                    <button>Click here</button>
-                </div>
-            </div>
-        </div>
-
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="src/images/studystockforside.jpg" style="width:100%">
+      <div class="text">Difficulties with time management? Head over to our Time management category!
+        <div class="buttoncontainer"><a href="categories.html"><button class="download">Click here</button></a></div>
+      </div>
+      
         
-
-        <div class="arrows arrow-left">
-            <label for="slide-3">
-                <span><i class="fas fa-angle-left"></i></span>
-            </label>
-            <label for="slide-1">
-                <span><i class="fas fa-angle-left"></i></span>
-            </label>
-            <label for="slide-2">
-                <span><i class="fas fa-angle-left"></i></span>
-            </label>
-        </div>
-
-        <div class="arrows arrow-right">
-            <label for="slide-2">
-                <span><i class="fas fa-angle-right"></i></span>
-            </label>
-            <label for="slide-3">
-                <span><i class="fas fa-angle-right"></i></span>
-            </label>
-            <label for="slide-1">
-                <span><i class="fas fa-angle-right"></i></span>
-            </label>
-        </div>
-
-        <div class="dots">
-            <label for="slide-1"></label>
-            <label for="slide-2"></label>
-            <label for="slide-3"></label>
-        </div>
+        
+    
+      
     </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="src/images/stockstudying.jpg" style="width:100%">
+      <div class="text">It can by hard to keep track of everything when doing big projects, head over to our Planning category and make your life easier!
+        <div class="buttoncontainer"><a href="categories.html"><button class="download">Click here</button></a></div>
+      </div>
+      
+        
+        
+    
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="src/images/stocklibrary.jpg" style="width:100%">
+      <div class="text">Simply looking to optimize your workflow? Head over to our Optimization category!
+        <div class="buttoncontainer"><a href="categories.html"><button class="download">Click here</button></a></div>
+      </div>
+      
+        
+        
+    
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script src="src/js/slideshow.js"></script>
 
 
 
-    <!--Cards underneath the slider-->
+    <!--Cards with article links underneath the slider-->
     <div class="sitecontainer">
         <div class="articlecontainer">
             <article class="articlecard">
                 <figure class="articleimage">
-                    <img src="src/images/stockphone.jpg" alt="studyingwithphone"/>
+                    <a href="articleone.html"><img src="src/images/stockphone.jpg" alt="studyingwithphone"/></a>
                 </figure>
                 <div class ="articlecontent">
-                    <a href="#" class="cardname">Studiz</a>
-                    <h3 class="cardtitle">The student discount app you've always wanted</h3>
-                    <p class="cardpara">Studiz is a website and an app that tells you exactly where you can get student discounts</p>
+                    <a href="articleone.html" class="cardname">Studiz</a>
+                    <a href="articleone.html"><h3 class="cardtitle">The student discount app you've always wanted</h3></a>
+                    <a href="articleone.html"><p class="cardpara">Studiz is a website and an app that tells you exactly where you can get student discounts</p></a>
                 </div>
             </article>
             <article class="articlecard">
                 <figure class="articleimage">
-                    <img src="src/images/notetaking.jpg" alt="notetaking"/>
+                    <a href="articletwo.html"><img src="src/images/notetaking.jpg" alt="notetaking"/></a>
                 </figure>
                 <div class ="articlecontent">
-                    <a href="#" class="cardname">Notion</a>
-                    <h3 class="cardtitle">The notetaking app that can do a lot more than advertised</h3>
-                    <p class="cardpara">Notion is a notetaking app that can not only behave like Windows OneNote, but it can be used fo project management as well</p>
+                    <a href="articletwo.html" class="cardname">Notion</a>
+                    <a href="articletwo.html"><h3 class="cardtitle">The notetaking app that can do a lot more than advertised</h3></a>
+                    <a href="articletwo.html"><p class="cardpara">Notion is a notetaking app that can not only behave like Windows OneNote, but it can be used fo project management as well</p></a>
                 </div>
             </article>
             <article class="articlecard">
                 <figure class="articleimage">
-                    <img src="src/images/schoolwork.jpg" alt="grammarcheck"/>
+                    <a href="articlethree.html"><img src="src/images/schoolwork.jpg" alt="grammarcheck"/></a>
                 </figure>
                 <div class ="articlecontent">
-                    <a href="#" class="cardname">Grammarly</a>
-                    <h3 class="cardtitle">Having problems writing? Grammarly has your back</h3>
-                    <p class="cardpara">Grammarly is an app that can help you check for grammar, vocabulary and helps you sound more professional</p>
+                    <a href="articlethree.html" class="cardname">Grammarly</a>
+                    <a href="articlethree.html"><h3 class="cardtitle">Having problems writing? Grammarly has your back</h3></a>
+                    <a href="articlethree.html"><p class="cardpara">Grammarly is an app that can help you check for grammar, vocabulary and helps you sound more professional</p></a>
                 </div>
             </article>
         </div>

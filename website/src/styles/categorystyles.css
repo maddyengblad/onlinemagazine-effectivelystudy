@@ -1,0 +1,95 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.category-container {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin: 2rem auto;
+    max-width: calc(100% - 80px);
+    padding-top: 1px;
+    padding-bottom: 50px;
+    margin-bottom: 100vh;
+    margin-top: 120px;
+
+}
+
+.category-articlecontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 3rem;
+    
+
+}
+
+.category-articleimage {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.category-articleimage img {
+    max-width: 100%;
+    height: auto;
+    min-height: 190px;
+    border-radius: 20px 20px 0 0;
+}
+
+.category-articlecard {
+    background: #e2eeff;
+    border-radius: 20px;
+    transition: 0.3s;
+    
+
+}
+
+.category-articlecard:hover {
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+
+.category-articlecontent {
+    padding: 2rem;
+
+}
+
+.category-articlecontent .category-cardname {
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    color: #171717;
+    display: block;
+    text-decoration: none;
+}
+
+.category-articlecontent .category-cardtitle {
+    margin: 1rem 0;
+    color: #171717;
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .category-container {
+        max-width: 608px;
+    }
+    .category-articlecard {
+        display: grid;
+        grid-template-rows: 220px 1fr;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .category-sitecontainer {
+        max-width: 1080px;
+
+    }
+}

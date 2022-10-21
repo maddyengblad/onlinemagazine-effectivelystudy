@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta data-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Studieapps, Studiehjemmesider, Studieprogrammer, Studiehjælp, Noteringsapp, Planlægningsapp">
+    <meta name="description" content="Gratis studie apps, hjemmesider og programmer. Hjælp og optimering til studiet eller projektet.">
+    <meta name="author" content="Mathies Engblad">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="src/styles/headerstyles.css">
+    <link rel="stylesheet" href="src/styles/footerstyles.css">
+    <link rel="stylesheet" href="src/styles/articlestyles.css">
+    <link rel="stylesheet" href="src/styles/frontpagestyles.css">
+
+    <!--Other links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+ 
+    <title>effectively.study - notion</title>
+</head>
+
+
+
+
+<body>
+    <!--HEADER WITH SEARCHBAR-->
+    <header>
+        <a class="logolink" href="index.html"><img class="logo" src="src/images/logo.png" alt="logo" height="55.89px" width="168.75px"></a>
+            <nav class="navgroup">
+                <ul class="navlinks">
+                    <li><a href="categories.html">categories</a></li>
+                    <li><a href="#">best tools</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                </ul>
+                
+            </nav>
+            <div class="search">
+                <span class="searchicon">
+                    <ion-icon name="search-outline" class="searchbutton"></ion-icon>
+                    <ion-icon name="close-outline" class="closebutton"></ion-icon>
+                </span>
+            </div>
+            <div class="searchbox">
+                <input type="text" placeholder="search">
+            </div>
+    </header>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let searchbutton = document.querySelector('.searchbutton');
+        let closebutton = document.querySelector('.closebutton');
+        let searchbox = document.querySelector('.searchbox');
+
+        searchbutton.onclick = function(){
+            searchbox.classList.add('active');
+            closebutton.classList.add('active');
+            searchbutton.classList.add('active');
+        }
+
+        closebutton.onclick = function(){
+            searchbox.classList.remove('active');
+            closebutton.classList.remove('active');
+            searchbutton.classList.remove('active');
+        }        
+    </script>
+
+<!--ARTICLE TWO: NOTION-->
+
+
+<div class="articlebox">
+    <article class="article">
+        <div class="heading">
+            <h1>Notion</h1>
+            <h3>The notetaking app that can do a lot more than advertised</h3>
+        </div>
+        
+        
+        <img src="src/images/notion.png" alt="Notion Frontpage" height="300px" width="585px"/>
+        <h4>Our rating: 8/10</h4>
+        <p>Imagine Microsoft OneNote, but on steroids. Not everyone has access to the Office package and there are limited options out there for notetaking and project management which doesn't leave something to be desired. Notion aims to fix that. </p>
+        <h3>How does it function?</h3>
+        <p>Notion is actually both a notetaking app and a project management app with a ton of features. It can be used just for easy notetaking that updates between all your devices, but you can also use it for groupwork and delegate tasks within a team and coordinate deadlines. </p>
+        <div class="buttoncontainer">
+            <a href="#"><button class="download">Download app</button></a>
+            <a href="#"><h3>Visit site</h3></a>
+        </div>
+    </article>
+</div>
+
+
+
+
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-column">
+                <h4>contact</h4>
+                <ul>
+                    <li>+45 53 35 23 77</li>
+                    <li>mathiesengblad@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>address</h4>
+                <ul>
+                    <li>Dr. Holsts Vej 40, 238, st.</li>
+                    <li>8230, Åbyhøj</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>follow us</h4>
+                <div class="socials">
+                    <a href="#"><img class="instagram" src="src/images/instagramicon.png" alt="instagram" width="40px" height="40px"></a>
+                    <a href="#"><img class="facebook" src="src/images/facebookicon.png" alt="facebook" width="40px" height="40px"></a>
+                    <a href="#"><img class="twitter" src="src/images/twittericon.png" alt="twitter" width="40px" height="40px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>

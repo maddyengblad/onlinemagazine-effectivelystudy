@@ -6,10 +6,19 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #171717;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+
 .container {
     max-width: 1400px;
     margin: auto;
     height: 100%;
+    
     
 
 }
@@ -61,7 +70,7 @@
 
 .footer {
     background-image: linear-gradient(to right, #f2e2ff, #e2eeff);
-    position: absolute;
+    position:static;
     left: 0;
     bottom:0;
     height:200px;
